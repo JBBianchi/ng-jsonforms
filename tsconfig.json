@@ -2,29 +2,52 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
+    "paths": {
+      "@jsonforms/angular": [
+        "dist/angular/angular",
+        "dist/angular"
+      ],
+      "@jsonforms/angular-material": [
+        "dist/angular-material/angular-material",
+        "dist/angular-material"
+      ],
+      "@jsonforms/angular-test": [
+        "dist/angular-test/angular-test",
+        "dist/angular-test"
+      ]
+    },
     "baseUrl": "./",
     "outDir": "./dist/out-tsc",
-    "forceConsistentCasingInFileNames": true,
-    "strict": true,
-    "noImplicitReturns": true,
-    "noFallthroughCasesInSwitch": true,
+    //"forceConsistentCasingInFileNames": true,
+    //"strict": true,
+    //"noImplicitReturns": true,
+    //"noFallthroughCasesInSwitch": true,
     "sourceMap": true,
-    "declaration": false,
-    "downlevelIteration": true,
+    "declaration": true,
+    //"downlevelIteration": true,
+    "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "moduleResolution": "node",
     "importHelpers": true,
-    "target": "es2017",
-    "module": "es2020",
+    "target": "ESNext",
+    "module": "ESNext",
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    
+    "noUnusedParameters": true,
+    "noUnusedLocals": true,
+    "noImplicitAny": true,
+    "allowSyntheticDefaultImports": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,
     "strictInjectionParameters": true,
     "strictInputAccessModifiers": true,
     "strictTemplates": true
-  }
+  },
+  "types": ["jest"]
 }
