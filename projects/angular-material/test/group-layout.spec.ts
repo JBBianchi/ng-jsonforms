@@ -24,7 +24,7 @@
 */
 import { ComponentFixture } from '@angular/core/testing';
 import { GroupLayout, UISchemaElement } from '@jsonforms/core';
-import { MatLegacyCard as MatCard, MatLegacyCardTitle as MatCardTitle } from '@angular/material/legacy-card';
+import { MatCard, MatCardTitle } from '@angular/material/card';
 import { By } from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
 import { beforeEachLayoutTest, setupMockStore } from '@jsonforms/angular-test';

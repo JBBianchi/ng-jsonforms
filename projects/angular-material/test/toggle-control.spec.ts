@@ -22,11 +22,11 @@
   OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
   THE SOFTWARE.
 */
-import { MatLegacyError as MatError, MatLegacyFormFieldModule as MatFormFieldModule } from '@angular/material/legacy-form-field';
+import { MatError, MatFormFieldModule } from '@angular/material/form-field';
 import {
-  MatLegacySlideToggle as MatSlideToggle,
-  MatLegacySlideToggleModule as MatSlideToggleModule,
-} from '@angular/material/legacy-slide-toggle';
+  MatSlideToggle,
+  MatSlideToggleModule,
+} from '@angular/material/slide-toggle';
 import {
   booleanBaseTest,
   booleanErrorTest,

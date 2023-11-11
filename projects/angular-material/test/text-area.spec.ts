@@ -24,8 +24,8 @@
 */
 import { DebugElement } from '@angular/core';
 import { ReactiveFormsModule } from '@angular/forms';
-import { MatLegacyError as MatError, MatLegacyFormFieldModule as MatFormFieldModule } from '@angular/material/legacy-form-field';
-import { MatLegacyInputModule as MatInputModule } from '@angular/material/legacy-input';
+import { MatError, MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import {
   ErrorTestExpectation,

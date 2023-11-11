@@ -25,9 +25,9 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 import { BrowserDynamicTestingModule } from '@angular/platform-browser-dynamic/testing';
-import { MatLegacyButtonModule as MatButtonModule } from '@angular/material/legacy-button';
+import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
-import { MatLegacyListItem as MatListItem, MatLegacyListModule as MatListModule } from '@angular/material/legacy-list';
+import { MatListItem, MatListModule } from '@angular/material/list';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import {
@@ -41,7 +41,7 @@ import { MasterListComponent } from '../src/other/master-detail/master';
 import { JsonFormsDetailComponent } from '../src/other/master-detail/detail';
 import { getJsonFormsService, setupMockStore } from '@jsonforms/angular-test';
 import { Actions } from '@jsonforms/core';
-import { MatLegacyTooltipModule as MatTooltipModule } from '@angular/material/legacy-tooltip';
+import { MatTooltipModule } from '@angular/material/tooltip';
 
 describe('Master detail', () => {
   let fixture: ComponentFixture<MasterListComponent>;
