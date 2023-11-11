@@ -25,11 +25,11 @@
 import { DebugElement } from '@angular/core';
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import {
-  MatTab,
-  MatTabBody,
-  MatTabGroup,
-  MatTabsModule,
-} from '@angular/material/tabs';
+  MatLegacyTab as MatTab,
+  MatLegacyTabBody as MatTabBody,
+  MatLegacyTabGroup as MatTabGroup,
+  MatLegacyTabsModule as MatTabsModule,
+} from '@angular/material/legacy-tabs';
 import { By } from '@angular/platform-browser';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import {
@@ -45,8 +45,8 @@ import {
 } from '../src';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { setupMockStore, getJsonFormsService } from '@jsonforms/angular-test';
-import { MatFormFieldModule } from '@angular/material/form-field';
-import { MatInputModule } from '@angular/material/input';
+import { MatLegacyFormFieldModule as MatFormFieldModule } from '@angular/material/legacy-form-field';
+import { MatLegacyInputModule as MatInputModule } from '@angular/material/legacy-input';
 import { ReactiveFormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 

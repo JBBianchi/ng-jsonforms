@@ -28,7 +28,7 @@ import {
   Input,
   OnInit,
 } from '@angular/core';
-import type { MatAutocompleteSelectedEvent } from '@angular/material/autocomplete';
+import type { MatLegacyAutocompleteSelectedEvent as MatAutocompleteSelectedEvent } from '@angular/material/legacy-autocomplete';
 import { JsonFormsAngularService, JsonFormsControl } from '@jsonforms/angular';
 import {
   Actions,

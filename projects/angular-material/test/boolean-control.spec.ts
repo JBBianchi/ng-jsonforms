@@ -22,8 +22,8 @@
   OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
   THE SOFTWARE.
 */
-import { MatCheckbox, MatCheckboxModule } from '@angular/material/checkbox';
-import { MatError, MatFormFieldModule } from '@angular/material/form-field';
+import { MatLegacyCheckbox as MatCheckbox, MatLegacyCheckboxModule as MatCheckboxModule } from '@angular/material/legacy-checkbox';
+import { MatLegacyError as MatError, MatLegacyFormFieldModule as MatFormFieldModule } from '@angular/material/legacy-form-field';
 import {
   booleanBaseTest,
   booleanErrorTest,
