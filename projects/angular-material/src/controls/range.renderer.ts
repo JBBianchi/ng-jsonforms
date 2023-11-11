@@ -60,6 +60,7 @@ export class RangeControlRenderer extends JsonFormsControl {
   min: number;
   max: number;
   multipleOf: number;
+  focused: boolean = false;
 
   constructor(
     jsonformsService: JsonFormsAngularService,
