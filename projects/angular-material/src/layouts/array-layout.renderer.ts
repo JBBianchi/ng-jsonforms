@@ -141,17 +141,17 @@ import {
   `,
   styles: [
     `
-                .array-layout-toolbar {
-                  display: flex;
-                  align-items: center;
-                }
-                .array-layout-title {
-                  margin: 0;
-                }
-                ::ng-deep .error-message-tooltip {
-                  white-space: pre-line;
-                }
-              `,
+      .array-layout-toolbar {
+        display: flex;
+        align-items: center;
+      }
+      .array-layout-title {
+        margin: 0;
+      }
+      ::ng-deep .error-message-tooltip {
+        white-space: pre-line;
+      }
+    `,
   ],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
@@ -180,7 +180,10 @@ export class ArrayLayoutRenderer
     this.removeItems(this.propsPath, [index])();
   }
   add(): void {
-    this.addItem(this.propsPath, createDefaultValue(this.scopedSchema))();
+    this.addItem(
+      this.propsPath,
+      createDefaultValue(this.scopedSchema, this.rootSchema)
+    )();
   }
   up(index: number): void {
     this.moveItemUp(this.propsPath, index)();
