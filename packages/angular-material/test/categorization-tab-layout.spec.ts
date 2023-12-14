@@ -43,7 +43,6 @@ import {
   TextControlRenderer,
   TextControlRendererTester,
 } from '../src';
-import { FlexLayoutModule } from '@angular/flex-layout';
 import { setupMockStore, getJsonFormsService } from '@jsonforms/angular-test';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
@@ -77,7 +76,6 @@ describe('Categorization tab layout', () => {
       imports: [
         CommonModule,
         MatTabsModule,
-        FlexLayoutModule,
         NoopAnimationsModule,
         JsonFormsModule,
         MatFormFieldModule,
@@ -85,7 +83,6 @@ describe('Categorization tab layout', () => {
         ReactiveFormsModule,
       ],
       providers: [JsonFormsAngularService],
-      teardown: { destroyAfterEach: false },
     })
       .overrideModule(BrowserDynamicTestingModule, {
         set: {

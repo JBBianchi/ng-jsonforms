@@ -25,7 +25,6 @@
 import { BrowserDynamicTestingModule } from '@angular/platform-browser-dynamic/testing';
 import { CommonModule } from '@angular/common';
 import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
-import { FlexLayoutModule } from '@angular/flex-layout';
 import { ReactiveFormsModule } from '@angular/forms';
 import { MatCardModule } from '@angular/material/card';
 import { MatFormFieldModule } from '@angular/material/form-field';
@@ -110,10 +109,8 @@ describe('Object Control', () => {
         MatFormFieldModule,
         MatInputModule,
         ReactiveFormsModule,
-        FlexLayoutModule,
       ],
       providers: [JsonFormsAngularService],
-      teardown: { destroyAfterEach: false },
     })
       .overrideModule(BrowserDynamicTestingModule, {
         set: {

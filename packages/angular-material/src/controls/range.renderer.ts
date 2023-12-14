@@ -33,10 +33,11 @@ import { isRangeControl, RankedTester, rankWith } from '@jsonforms/core';
 @Component({
   selector: 'RangeControlRenderer',
   template: `
-    <div fxFlex fxLayout="column" [fxHide]="hidden">
+    <div [ngStyle]="{ display: hidden ? 'none' : '' }" class="range-control">
       <label class="mat-caption" style="color:rgba(0,0,0,.54)">{{
         label
       }}</label>
+      <!-- TODO: The 'tickInterval' property no longer exists -->
       <mat-slider
         [disabled]="!isEnabled()"
         [max]="max"
@@ -44,20 +45,10 @@ import { isRangeControl, RankedTester, rankWith } from '@jsonforms/core';
         [step]="multipleOf"
         [discrete]="true"
         [id]="id"
+        showTickMarks
         #ngSlider
       >
-        <input
-          matSliderThumb
-          [value]="data || scopedSchema.default"
-          (change)="
-            onChange({
-              source: ngSliderThumb,
-              parent: ngSlider,
-              value: ngSliderThumb.value
-            })
-          "
-          #ngSliderThumb="matSliderThumb"
-        />
+        <input matSliderThumb />
       </mat-slider>
       <mat-hint class="mat-caption" *ngIf="shouldShowUnfocusedDescription()">{{
         description
@@ -65,6 +56,19 @@ import { isRangeControl, RankedTester, rankWith } from '@jsonforms/core';
       <mat-error class="mat-caption">{{ error }}</mat-error>
     </div>
   `,
+  styles: [
+    `
+      :host {
+        display: flex;
+        flex-direction: row;
+      }
+      .range-control {
+        flex: 1 1 auto;
+        display: flex;
+        flex-direction: column;
+      }
+    `,
+  ],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class RangeControlRenderer extends JsonFormsControl {

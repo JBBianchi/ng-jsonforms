@@ -35,7 +35,6 @@ import {
   JsonFormsOutlet,
   UnknownRenderer,
 } from '@jsonforms/angular';
-import { FlexLayoutModule } from '@angular/flex-layout';
 import { DebugElement } from '@angular/core';
 import { MasterListComponent } from '../src/other/master-detail/master';
 import { JsonFormsDetailComponent } from '../src/other/master-detail/detail';
@@ -114,12 +113,10 @@ describe('Master detail', () => {
         MatSidenavModule,
         MatIconModule,
         MatButtonModule,
-        FlexLayoutModule,
         NoopAnimationsModule,
         MatTooltipModule,
       ],
       providers: [JsonFormsAngularService],
-      teardown: { destroyAfterEach: false },
     })
       .overrideModule(BrowserDynamicTestingModule, {
         set: {

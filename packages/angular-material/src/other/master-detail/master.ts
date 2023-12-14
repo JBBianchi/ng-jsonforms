@@ -66,7 +66,10 @@ export const removeSchemaKeywords = (path: string) => {
 @Component({
   selector: 'jsonforms-list-with-detail-master',
   template: `
-    <mat-sidenav-container class="container" [fxHide]="hidden">
+    <mat-sidenav-container
+      [ngStyle]="{ display: hidden ? 'none' : '' }"
+      class="container"
+    >
       <mat-sidenav mode="side" opened>
         <mat-nav-list>
           <mat-list-item *ngIf="masterItems.length === 0">{{
@@ -135,8 +138,10 @@ export const removeSchemaKeywords = (path: string) => {
         float: right;
         margin-right: 0.25em;
       }
-      .hide {
-        display: none;
+      .item-button {
+        position: absolute;
+        top: 0;
+        right: 0;
       }
       .show {
         display: inline-block;

@@ -3,5 +3,9 @@
   "dest": "../../dist/angular-material",
   "lib": {
     "entryFile": "src/index.ts"
-  }
+  },
+  "allowedNonPeerDependencies": [
+    "hammerjs",
+    "lodash"
+  ]
 }
