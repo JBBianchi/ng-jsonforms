@@ -85,6 +85,7 @@ describe('Categorization tab layout', () => {
         ReactiveFormsModule,
       ],
       providers: [JsonFormsAngularService],
+      teardown: { destroyAfterEach: false },
     })
       .overrideModule(BrowserDynamicTestingModule, {
         set: {

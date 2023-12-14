@@ -135,11 +135,6 @@ export const removeSchemaKeywords = (path: string) => {
         float: right;
         margin-right: 0.25em;
       }
-      .item-button {
-        position: absolute;
-        top: 0;
-        right: 0;
-      }
       .hide {
         display: none;
       }

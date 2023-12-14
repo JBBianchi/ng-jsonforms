@@ -119,6 +119,7 @@ describe('Master detail', () => {
         MatTooltipModule,
       ],
       providers: [JsonFormsAngularService],
+      teardown: { destroyAfterEach: false },
     })
       .overrideModule(BrowserDynamicTestingModule, {
         set: {

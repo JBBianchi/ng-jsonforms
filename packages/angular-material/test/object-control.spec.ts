@@ -113,6 +113,7 @@ describe('Object Control', () => {
         FlexLayoutModule,
       ],
       providers: [JsonFormsAngularService],
+      teardown: { destroyAfterEach: false },
     })
       .overrideModule(BrowserDynamicTestingModule, {
         set: {

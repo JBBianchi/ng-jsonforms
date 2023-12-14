@@ -91,6 +91,7 @@ describe('Autocomplete control Base Tests', () => {
       declarations: [componentUT],
       imports: imports,
       providers: providers,
+      teardown: { destroyAfterEach: false },
     }).compileComponents();
   });
   beforeEach(() => {
@@ -222,6 +223,7 @@ describe('AutoComplete control Input Event Tests', () => {
       declarations: [componentUT],
       imports: imports,
       providers: [...providers],
+      teardown: { destroyAfterEach: false },
     }).compileComponents();
 
     inject([OverlayContainer], (oc: OverlayContainer) => {
@@ -310,6 +312,7 @@ describe('AutoComplete control Error Tests', () => {
       declarations: [componentUT],
       imports: imports,
       providers: providers,
+      teardown: { destroyAfterEach: false },
     }).compileComponents();
   });
   beforeEach(() => {

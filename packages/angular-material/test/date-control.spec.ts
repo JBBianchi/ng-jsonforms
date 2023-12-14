@@ -98,6 +98,7 @@ describe('Date control Base Tests', () => {
       declarations: [componentUT],
       imports: imports,
       providers: providers,
+      teardown: { destroyAfterEach: false },
     }).compileComponents();
   });
   beforeEach(() => {
@@ -231,6 +232,7 @@ describe('Date control Input Event Tests', () => {
       declarations: [componentUT],
       imports: imports,
       providers: providers,
+      teardown: { destroyAfterEach: false },
     }).compileComponents();
   });
   beforeEach(() => {
@@ -276,6 +278,7 @@ describe('Date control Error Tests', () => {
       declarations: [componentUT],
       imports: imports,
       providers: providers,
+      teardown: { destroyAfterEach: false },
     }).compileComponents();
   });
   beforeEach(() => {
