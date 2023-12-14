@@ -21,7 +21,7 @@
     "@angular/platform-browser": "~15.2.10",
     "@angular/platform-browser-dynamic": "~15.2.10",
     "@angular/router": "~15.2.10",
-    "@jsonforms/core": "3.2.0-alpha.1",
+    "@jsonforms/core": "3.2.0-alpha.3",
     "@types/json-schema": "7.0.3",
     "ajv": "8.6.1",
     "ajv-formats": "2.1.0",
